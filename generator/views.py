@@ -28,7 +28,7 @@
 #         form = InputForm(request.POST)
 #         if form.is_valid():
 #             user_input = form.cleaned_data['user_input']
-#             generated_content = generate_content(f"provide contant on{user_input}")
+#             generated_content = generate_content(f"provide content on{user_input}")
 #             GeneratedContent.objects.create(user_input=user_input, generated_content=generated_content)
 #             return redirect('content_display')
 #     else:
