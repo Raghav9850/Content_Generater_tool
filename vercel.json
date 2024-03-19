@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "content_generation_tool/wsgi.py",
+        "src": "content_generation/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "content_generation_tool/wsgi.py"
+            "dest": "content_generation/wsgi.py"
         }
     ]
 }
